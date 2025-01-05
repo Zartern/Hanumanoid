@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<robot name="Legs" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="L1hip_to_base_link_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="L1hip_to_base_link">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="L1hip_to_base_link_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="R1hip_to_base_link_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="R1hip_to_base_link">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="R1hip_to_base_link_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="L2hip_to_L1hip_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="L2hip_to_L1hip">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="L2hip_to_L1hip_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="R2hip_to_R1hip_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="R2hip_to_R1hip">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="R2hip_to_R1hip_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="R3upper_to_R2hip_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="R3upper_to_R2hip">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="R3upper_to_R2hip_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="L3upper_to_L2hip_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="L3upper_to_L2hip">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="L3upper_to_L2hip_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="L4lower_to_L3upper_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="L4lower_to_L3upper">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="L4lower_to_L3upper_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="R4lower_to_R3upper_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="R4lower_to_R3upper">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="R4lower_to_R3upper_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="L5foot_to_L4lower_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="L5foot_to_L4lower">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="L5foot_to_L4lower_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="R5foot_to_R4lower_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="R5foot_to_R4lower">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="R5foot_to_R4lower_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
